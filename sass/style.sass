@@ -1,0 +1,157 @@
+$text-dark: #061e37
+*
+    box-sizing: border-box
+a
+    text-decoration: none
+    color: inherit
+body
+    font-family: 'Raleway', sans-serif
+html
+    min-width: 767px
+    font-size: 14px
+.button
+    color: inherit
+.container
+    margin: 0 75px 0 75px
+.header
+    color: #fff
+    //background: #07BED1 url("/img/header-bg.png") no-repeat
+    background-image: url("/img/header-bg.png")
+    background-size: cover
+    &-bg
+        height: 100%
+        background-image: linear-gradient( 143deg, rgba(0,184,212,0.8) 0%, rgba(29,233,182,0.8) 100%)
+        padding-top: 50px
+    .navbar
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-menu
+        display: flex
+        font-weight: 600
+        &__item
+            margin-left: 45px
+            transition-property: color
+            transition-duration: 0.2s
+            &::after
+                position: relative
+                top: 2px
+                left: 50%
+                display: block
+                content: ''
+                height: 2px
+                width: 0
+                background-color: $text-dark
+                transition-duration: 0.2s
+            &:hover
+                color: $text-dark
+                &::after
+                    left: 0
+                    width: 100%
+            &:first-child
+                margin-left: 0
+    .sign-up
+        width: 80px
+        height: 25px
+        font-size: 0.9rem
+        border: 1px solid #fff
+        border-radius: 2px
+        background-color: transparent
+        color: #fff
+        transition-duration: 0.1s
+        font-family: 'Raleway', sans-serif
+        &:hover
+            cursor: pointer
+            background-color: rgba(255, 255, 255, 0.1)
+    &-elements
+        display: flex
+        justify-content: space-between
+        margin: 165px 0 185px 0
+        &-left
+            width: 600px
+            &__title
+                font-size: 4rem
+                font-weight: 800
+                text-transform: uppercase
+            &__text
+                margin-top: 30px
+                font-size: 1.2rem
+                line-height: 2rem
+            &__buttons
+                margin-top: 40px
+                .button
+                    text-transform: uppercase
+                    height: 55px
+                    border: none
+                    border-radius: 5px
+                    padding: 0 30px 0 30px
+                    cursor: pointer
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15)
+                    font-weight: bold
+                    transition-property: box-shadow
+                    transition-duration: 0.2s
+                .buy-now
+                    background-color: $text-dark
+                    &:hover
+                        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15)
+                .try-for-free
+                    margin-left: 30px
+                    background-color: #fff
+                    color: $text-dark
+                    &:hover
+                        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15)
+        &-right
+            &__video
+                width: 600px
+                height: 320px
+                background-image: url("/img/video-bg.png")
+                background-size: cover
+                border: 1px solid $text-dark
+                border-radius: 5px
+                box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2)
+                cursor: pointer
+                transition-property: box-shadow
+                transition-duration: 0.2s
+                &:hover
+                    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2)
+                &-bg
+                    width: 100%
+                    height: 100%
+                    background-color: rgba(255,255,255,0.8)
+                    border-radius: 5px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    flex-direction: column
+                    .play-button
+                        width: 60px
+                        height: 60px
+                        background-color: $text-dark
+                        border-radius: 5px
+                        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+                        &::after
+                            display: block
+                            position: relative
+                            top: 25px
+                            left: 27px
+                            content: ''
+                            border: 5px solid transparent
+                            border-left: 6px solid #fff
+                    .watch-the-video
+                        margin-top: 20px
+                        color: $text-dark
+                        font-weight: bold
+                        text-transform: uppercase
+.logo
+    display: flex
+    align-items: center
+    &__text
+        margin-left: 10px
+        color: #fff
+        display: flex
+        flex-direction: column
+        text-transform: uppercase
+    .dart
+        font-weight: lighter
+    .service-manager
+        font-weight: bold
